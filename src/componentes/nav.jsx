@@ -11,7 +11,7 @@ const valueChange=(e)=>{
 	return (
 		<nav className="nav">
 			<span className="namePage"> Movies</span>
-			<div>
+			<div className="search">
 				<input type="search"value={value} onChange={valueChange}></input>
 				<button type="submit"> Buscar</button>
 			</div>

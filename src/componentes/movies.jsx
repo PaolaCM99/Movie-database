@@ -25,8 +25,10 @@ function Movies() {
 				
 				<div className="movie">
 					<p className="title">{movie.title}</p>
-					<img className="img" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt="img poster"/>
-					<div className="overview"> {movie.overview}</div>
+					<div className="container-img">
+					<img className="img" src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} alt=" Poster"/>
+					</div>
+					<div className="overview"> Overview: <br/>{movie.overview}</div>
 				
 				</div>
 				
