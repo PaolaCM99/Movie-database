@@ -27,6 +27,7 @@ function Movies({ movies }) {
 							<div className="overview">
 								<i className="fas fa-times modal-close" onClick={handleClose}></i>
 								<article className="modal-information">
+									<h2 className="language">{movie.original_language} </h2>
 									<h3>Overview</h3>
 									<p>{movie.overview} </p>
 									<h3> Fecha de lanzamiento</h3>

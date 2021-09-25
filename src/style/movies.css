@@ -108,3 +108,12 @@
 	width: 260px;
 	height: 290px;
 }
+.language{
+	position: relative;
+	background-color: rgb(190, 9, 9);
+	color: white;
+	text-transform: uppercase;
+	width: 5vw;
+	display: flex;
+	left: 91%;
+}
