@@ -1,19 +1,20 @@
-
-*{
+* {
 	margin: 0%;
 	padding: 0%;
 }
-.title{
+
+.title {
 	font-size: 18px;
 	font-weight: 600;
 	position: absolute;
 	padding: 10px 10px;
 	bottom: 0px;
 	word-wrap: break-word;
-	background-color:rgba(37, 37, 37, 0.699);
+	background-color: rgba(37, 37, 37, 0.699);
 	width: 100%;
 }
-.container-movies{
+
+.container-movies {
 	margin-top: 3em;
 	display: grid;
 	width: 100%;
@@ -24,11 +25,12 @@
 	padding-bottom: 5em;
 	background-color: rgb(30, 30, 37);
 }
-.movie{
+
+.movie {
 	background-color: rgb(48, 44, 44);
 	padding: 1px;
 	position: relative;
-	margin-top:2em;
+	margin-top: 2em;
 	border-radius: 10px;
 	width: 250px;
 	height: 305px;
@@ -37,30 +39,43 @@
 	transition: height 0.5s
 }
 
-.movie *{
+.movie * {
 	display: flex;
 	justify-content: center;
 
 }
-.movie> p{
+
+.movie>p {
 	/* padding: 10px; */
 	text-align: center;
 	background-color: rgb(7, 7, 7)
 }
 
-.overview{
-	position: fixed;
+.overview {
+	position: relative;
 	display: flex;
 	background-color: rgb(255, 255, 255);
-	justify-self: center;
-	top:25vh;
+	top: 25vh;
+	left: 20%;
 	padding: 1em;
 	height: 50vh;
 	width: 50vw;
-	z-index: 10;
+	z-index: 16;
 	flex-direction: column;
 }
-.modal-close{
+
+.modal-background {
+	position: fixed;
+	align-content: center;
+	justify-content: center;
+	top: 0%;
+	z-index: 16;
+	height: 100%;
+	width: 100%;
+	background-color: rgba(0, 0, 0, 0.096);
+}
+
+.modal-close {
 	position: relative;
 	padding-bottom: 10px;
 	display: flex;
@@ -69,23 +84,27 @@
 	left: 96%;
 	cursor: pointer;
 }
-.modal-information *{
+
+.modal-information * {
 	padding: 5px;
 }
-.container-img{
+
+.container-img {
 	position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 310px;
-    z-index: 2;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 310px;
+	z-index: 2;
 	display: flex;
 	flex-direction: column;
 	background-color: rgb(27, 27, 27);
+	cursor: pointer;
 	/* width: 240px;
 	height: 260px; */
 }
-.img{
+
+.img {
 	width: 260px;
 	height: 290px;
 }
