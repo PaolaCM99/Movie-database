@@ -4,7 +4,8 @@ Pagina web para con la informacion de las peliculas mas populares de los ultimos
 Puedes encontrar:
 * Nombre de la pelicula
 * Imagen del poster
-* Sinopsis
+* Sinopsis 
+* Fecha de lanzamiento
 
 ## Home de la pagina
-![Imagen inicial](https://trello.com/1/cards/608044116542f871be8156f2/attachments/611e96e3f07df0258202b37e/download/image.png)
+![Imagen inicial](https://raw.githubusercontent.com/PaolaCM99/Movie-database/main/src/img/home.PNG)
