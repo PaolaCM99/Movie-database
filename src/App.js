@@ -17,6 +17,7 @@ function App() {
 		const data = await fetch(url)
 		const dataJson = await data.json()
 		setMovies(dataJson.results)
+		console.log(dataJson.results)
 	}
 //Obteniendo valor del input
 	const valueChange = (e) => setValue(e.target.value)
@@ -42,11 +43,14 @@ function App() {
 	return (
 		<div className="App">
 			<nav className="nav">
-				<span className="namePage" onClick={handleHome}> Movies</span>
+				<span className="namePage" onClick={handleHome}>
+				<i class="fas fa-film"> </i> Movies</span>
 				<div className="search">
 					<form onSubmit={handleSearch} id="myForm">
 					<input type="search" placeholder="Busca tu pelicula..." value={value} onChange={valueChange}></input>
-					<button type="submit"  > Buscar</button>
+					<button type="submit">
+					<i class="fas fa-search search-icon"></i>
+					</button>
 					</form>
 					
 				</div>
@@ -59,7 +63,7 @@ function App() {
 
 			</nav>
 			<Movies movies={movies} />
-			<Pagination />
+			{/* <Pagination /> */}
 		</div>
 	);
 }
