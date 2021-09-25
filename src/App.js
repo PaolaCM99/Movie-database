@@ -17,7 +17,7 @@ function App() {
 		const data = await fetch(url)
 		const dataJson = await data.json()
 		setMovies(dataJson.results)
-		console.log(dataJson.results)
+		console.log(dataJson)
 	}
 //Obteniendo valor del input
 	const valueChange = (e) => setValue(e.target.value)
